@@ -1,0 +1,13 @@
+<div>
+ <h2>Login</h2>
+ <%= form_tag '/login' do%>
+    Usuário: <%= text_field_tag :user_name %><br>
+    Senha: <%= password_field_tag :password %><br>
+    <%=submit_tag "Entrar"%>
+ <%end%>
+</div>
+<br>
+
+<div>
+  <%= link_to "Ir para cadastro de usuários", new_user_path %>
+</div>
